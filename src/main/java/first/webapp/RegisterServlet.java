@@ -66,7 +66,7 @@ public class RegisterServlet extends HttpServlet {
 	            ps.setString(2, p);
 	            ps.setString(3, e);
 	            ps.setString(4, c);
-	 
+	        //Print output if the name box have data.
 	            int i = ps.executeUpdate();
 	            if (i > 0)
 	                out.print("You are successfully registered... <button onclick=\"window.location.href='http://localhost:8085/lesson14/register.jsp';\"> Click to go to user registration </button>" ); //print out this message as response
